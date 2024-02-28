@@ -1,16 +1,9 @@
 import { Link } from 'react-router-dom';
-import buyZoro from '../assets/buyZoro.png';
 import zoroGif from '../assets/zoroGif.gif';
 
 export function Home() {
   return (
     <>
-      <img
-        src={buyZoro}
-        alt=""
-        className="absolute right-4 bottom-0 max-sm:h-20"
-      />
-
       <div className="flex flex-col items-center">
         <img
           src={zoroGif}

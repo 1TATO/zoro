@@ -18,7 +18,7 @@ export function Home() {
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[#ad2224] p-4 text-4xl mt-14 max-sm:text-3xl"
+          className="bg-[#e97173] p-4 text-4xl mt-14 max-sm:text-3xl"
         >
           Apply for Whitelist
         </Link>

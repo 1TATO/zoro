@@ -20,7 +20,7 @@ export function Tokenomics() {
         <li>1,000,000,000 Max Supply</li>
         <li>$0.00005 per token</li>
         <li>$50K FDV</li>
-        <li>950,000,000</li>
+        <li>950,000,000 to whitelist</li>
         <li>5% to team/advisors</li>
       </ul>
 

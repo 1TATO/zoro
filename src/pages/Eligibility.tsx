@@ -10,7 +10,7 @@ export function Eligibility() {
       />
 
       <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-32">
-        WL Eligible:
+        WL Eligibility:
       </h1>
 
       <p className="mt-14 p-4 text-4xl text-center max-sm:text-3xl max-sm:mt-2">

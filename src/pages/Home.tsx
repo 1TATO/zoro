@@ -18,7 +18,7 @@ export function Home() {
           className="h-[580px] w-[580px] max-sm:w-72 max-sm:h-72"
         />
 
-        <h1 className="text-[#16231A] font-bold text-6xl mt-7 font-kdam max-sm:text-4xl">
+        <h1 className="text-[#16231A] font-bold text-6xl mt-7 font-acme max-sm:text-4xl">
           $ZORO SRC-20
         </h1>
 
@@ -26,7 +26,7 @@ export function Home() {
           <Link
             to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
             target="_blank"
-            className="bg-[#ff5456] p-4 text-4xl font-kdam font-bold max-sm:text-3xl"
+            className="bg-[#ff5456] p-4 text-4xl font-acme font-bold max-sm:text-3xl"
           >
             Apply for Whitelist
           </Link>

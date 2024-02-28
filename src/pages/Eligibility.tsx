@@ -9,11 +9,11 @@ export function Eligibility() {
         className="absolute right-4 top-20 max-sm:w-56"
       />
 
-      <h1 className="text-[#16231A] font-bold text-6xl font-kdam mt-20 text-center max-sm:text-5xl max-sm:mt-32">
+      <h1 className="text-[#16231A] font-bold text-6xl font-acme mt-20 text-center max-sm:text-5xl max-sm:mt-32">
         WL Eligible:
       </h1>
 
-      <p className="mt-14 p-4 text-4xl font-kdam font-bold text-center max-sm:text-3xl max-sm:mt-2">
+      <p className="mt-14 p-4 text-4xl font-acme font-bold text-center max-sm:text-3xl max-sm:mt-2">
         WL available to holders of (one of these):
       </p>
 

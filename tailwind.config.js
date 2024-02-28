@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
-        'kdam': ['Kdam Thmor Pro', 'sans-serif']
+        'kdam': ['Kdam Thmor Pro', 'sans-serif'],
+        'acme': ['Acme', 'sans-serif']
       }
     },
   },

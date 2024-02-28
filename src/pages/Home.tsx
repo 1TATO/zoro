@@ -8,10 +8,10 @@ export function Home() {
         <img
           src={zoroGif}
           alt=""
-          className="h-[580px] w-[580px] -mt-8 max-sm:w-72 max-sm:h-72"
+          className="h-[580px] w-[580px] max-sm:w-72 max-sm:h-72"
         />
 
-        <h1 className="text-[#16231A] text-6xl mt-20 max-sm:text-4xl">
+        <h1 className="text-[#16231A] text-6xl mt-16 max-sm:text-4xl">
           $ZORO SRC-20
         </h1>
 

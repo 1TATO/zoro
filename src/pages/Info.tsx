@@ -6,10 +6,10 @@ export function Info() {
       <img
         src={buyZoro}
         alt=""
-        className="absolute right-4 top-20 max-sm:w-56"
+        className="absolute right-0 top-20 max-sm:w-56"
       />
 
-      <h1 className="text-[#16231A] font-bold text-6xl font-acme mt-20 text-center max-sm:text-5xl max-sm:mt-32">
+      <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-32">
         Info:
       </h1>
 

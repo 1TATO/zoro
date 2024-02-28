@@ -1,12 +1,13 @@
-import buyZoro from '../assets/buyZoro.png';
+// import buyZoro from '../assets/buyZoro.png';
+import buyZoro2 from '../assets/buyZoro2.png';
 
 export function Info() {
   return (
     <>
       <img
-        src={buyZoro}
+        src={buyZoro2}
         alt=""
-        className="absolute right-0 top-20 max-sm:w-56"
+        className="absolute right-0 w-96 top-20 max-sm:w-56"
       />
 
       <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-32">

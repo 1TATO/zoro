@@ -1,15 +1,15 @@
 import { faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import buyZoro from '../assets/buyZoro.png';
+import buyZoro2 from '../assets/buyZoro2.png';
 
 export function Tokenomics() {
   return (
     <div className="">
       <img
-        src={buyZoro}
+        src={buyZoro2}
         alt=""
-        className="absolute right-0 top-20 max-sm:w-56"
+        className="absolute right-0 w-96 top-20 max-sm:w-56"
       />
 
       <h1 className="text-[#16231A] font-bold text-6xl mt-52 text-center max-sm:text-5xl">

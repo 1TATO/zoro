@@ -14,10 +14,10 @@ export function Home() {
   const eligibilitySec = useRef<null | HTMLElement>(null);
   const tokenomicsSec = useRef<null | HTMLElement>(null);
 
-  const homeClick = () => {
-    homeSec.current?.scrollIntoView({ behavior: 'smooth' });
-    setMenuOpenState(false);
-  };
+  // const homeClick = () => {
+  //   homeSec.current?.scrollIntoView({ behavior: 'smooth' });
+  //   setMenuOpenState(false);
+  // };
 
   const infoClick = () => {
     infoSec.current?.scrollIntoView({ behavior: 'smooth' });

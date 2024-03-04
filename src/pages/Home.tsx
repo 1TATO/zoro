@@ -28,7 +28,7 @@ export function Home() {
 
   return (
     <>
-      <nav className="flex items-center justify-end gap-10 text-white text-xl max-sm:text-base">
+      <nav className="flex items-center justify-end gap-10 text-white text-xl max-sm:text-sm">
         <button onClick={homeClick}>Home</button>
         <button onClick={infoClick}>Info</button>
         <button onClick={eligibilityClick}>Eligibility</button>

@@ -1,11 +1,14 @@
 import { faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import zoroGif from '../assets/zoroGif.gif';
 
 export function Home() {
+  const [menuOpenState, setMenuOpenState] = useState(false);
+
   const homeSec = useRef<null | HTMLElement>(null);
   const infoSec = useRef<null | HTMLElement>(null);
   const eligibilitySec = useRef<null | HTMLElement>(null);
@@ -13,27 +16,36 @@ export function Home() {
 
   const homeClick = () => {
     homeSec.current?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpenState(false);
   };
 
   const infoClick = () => {
     infoSec.current?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpenState(false);
   };
 
   const eligibilityClick = () => {
     eligibilitySec.current?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpenState(false);
   };
 
   const tokenomicsClick = () => {
     tokenomicsSec.current?.scrollIntoView({ behavior: 'smooth' });
+    setMenuOpenState(false);
   };
+
+  function toggleMenu() {
+    setMenuOpenState(!menuOpenState);
+  }
 
   const styles = {
     bmBurgerButton: {
-      position: 'fixed',
-      width: '36px',
-      height: '30px',
-      right: '40px',
+      position: 'absolute',
+      width: '24px',
+      height: '20px',
+      right: '20px',
       top: '40px',
+      // display: 'hidden',
     },
     bmBurgerBars: {
       background: '#FFFFFF',
@@ -52,7 +64,7 @@ export function Home() {
       position: 'fixed',
       height: '100%',
       right: '0px',
-      width: '200px',
+      width: '240px',
       top: '0px',
     },
     bmMenu: {
@@ -69,10 +81,12 @@ export function Home() {
     },
     bmItem: {
       display: 'block',
-      fontSize: '1.25em',
+      fontSize: '1.5em',
+      paddingBottom: '12px',
     },
     bmOverlay: {
-      background: 'rgba(0, 0, 0, 0.3)',
+      background: 'rgba(0, 0, 0, 0)',
+      top: '0px',
     },
   };
 
@@ -81,28 +95,43 @@ export function Home() {
       <section ref={homeSec} />
 
       <div className="sm:hidden">
-        <Menu right width={'10%'} isOpen={false} noOverlay styles={styles}>
-          {/* <nav className="flex items-center justify-end gap-10 text-white text-xl gap-y-5 m-80"> */}
-          <button onClick={homeClick}>Home</button>
+        <button
+          className="absolute h-5 w-5 right-5 top-10 text-white z-50"
+          onClick={toggleMenu}
+        >
+          <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} />
+        </button>
+
+        <Menu
+          right
+          width={'10%'}
+          isOpen={menuOpenState}
+          customBurgerIcon={false}
+          styles={styles}
+        >
+          <button>Home</button>
           <button onClick={infoClick}>Info</button>
           <button onClick={eligibilityClick}>Eligibility</button>
           <button onClick={tokenomicsClick}>Tokenomics</button>
-          <Link to={'/'} className="bg-[#ff0a0a]">
+          <Link
+            to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
+            target="_blank"
+            className="bg-[#E40000] p-3 rounded-full"
+          >
             Whitelist
           </Link>
-          {/* </nav> */}
         </Menu>
       </div>
 
       <nav className="flex items-center justify-end gap-10 text-white text-xl gap-y-5 max-sm:text-xs max-sm:hidden">
-        <button onClick={homeClick}>Home</button>
+        <button>Home</button>
         <button onClick={infoClick}>Info</button>
         <button onClick={eligibilityClick}>Eligibility</button>
         <button onClick={tokenomicsClick}>Tokenomics</button>
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[rgb(255,10,10)] p-2 rounded-full max-sm:hidden"
+          className="bg-[#E40000] p-2 rounded-full max-sm:hidden"
         >
           Whitelist
         </Link>

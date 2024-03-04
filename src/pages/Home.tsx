@@ -1,6 +1,7 @@
 import { faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef } from 'react';
+import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import zoroGif from '../assets/zoroGif.gif';
 
@@ -26,14 +27,82 @@ export function Home() {
     tokenomicsSec.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const styles = {
+    bmBurgerButton: {
+      position: 'fixed',
+      width: '36px',
+      height: '30px',
+      right: '40px',
+      top: '40px',
+    },
+    bmBurgerBars: {
+      background: '#FFFFFF',
+    },
+    bmBurgerBarsHover: {
+      background: '#FFFFFF',
+    },
+    bmCrossButton: {
+      height: '24px',
+      width: '24px',
+    },
+    bmCross: {
+      background: '#FFF',
+    },
+    bmMenuWrap: {
+      position: 'fixed',
+      height: '100%',
+      right: '0px',
+      width: '200px',
+      top: '0px',
+    },
+    bmMenu: {
+      background: '#ff0a0a',
+      padding: '2.5em 1.5em 0',
+      fontSize: '1.15em',
+    },
+    bmMorphShape: {
+      fill: '#373a47',
+    },
+    bmItemList: {
+      color: '#FFF',
+      padding: '0.8em',
+    },
+    bmItem: {
+      display: 'block',
+    },
+    bmOverlay: {
+      background: 'rgba(0, 0, 0, 0.3)',
+    },
+  };
+
   return (
     <>
-      <nav className="flex items-center justify-end gap-10 text-white text-xl max-sm:text-sm">
+      <section ref={homeSec} />
+
+      <div className="sm:hidden">
+        <Menu right width={'10%'} isOpen={false} noOverlay styles={styles}>
+          {/* <nav className="flex items-center justify-end gap-10 text-white text-xl gap-y-5 m-80"> */}
+          <button onClick={homeClick}>Home</button>
+          <button onClick={infoClick}>Info</button>
+          <button onClick={eligibilityClick}>Eligibility</button>
+          <button onClick={tokenomicsClick}>Tokenomics</button>
+          <Link to={'/'} className="bg-[#ff0a0a]">
+            Whitelist
+          </Link>
+          {/* </nav> */}
+        </Menu>
+      </div>
+
+      <nav className="flex items-center justify-end gap-10 text-white text-xl gap-y-5 max-sm:text-xs max-sm:hidden">
         <button onClick={homeClick}>Home</button>
         <button onClick={infoClick}>Info</button>
         <button onClick={eligibilityClick}>Eligibility</button>
         <button onClick={tokenomicsClick}>Tokenomics</button>
-        <Link to={'/'} className="bg-[rgb(255,10,10)] p-2">
+        <Link
+          to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
+          target="_blank"
+          className="bg-[rgb(255,10,10)] p-2 rounded-full max-sm:hidden"
+        >
           Whitelist
         </Link>
       </nav>
@@ -42,7 +111,7 @@ export function Home() {
         <img
           src={zoroGif}
           alt=""
-          className="h-[580px] w-[580px] fixed mt-72 -ml-28 max-sm:w-96 max-sm:h-96 max-sm:absolute max-sm:m-auto"
+          className="h-[580px] w-[580px] fixed mt-96 -ml-28 max-sm:w-96 max-sm:h-96 max-sm:absolute max-sm:m-auto"
         />
       </div>
 
@@ -52,7 +121,7 @@ export function Home() {
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[rgb(255,10,10)] text-white p-6 text-5xl rounded-full mt-1 max-sm:text-2xl"
+          className="bg-[rgb(255,10,10)] text-white p-6 text-5xl rounded-full mt-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 max-sm:text-2xl"
         >
           Apply for Whitelist
         </Link>

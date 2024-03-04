@@ -6,27 +6,29 @@ import zoroGif from '../assets/zoroGif.gif';
 export function Home() {
   return (
     <>
-      <img
-        src={zoroGif}
-        alt=""
-        className="h-[580px] w-[580px] fixed mt-72 -ml-28 max-sm:w-72 max-sm:h-72"
-      />
+      <div className="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-48">
+        <img
+          src={zoroGif}
+          alt=""
+          className="h-[580px] w-[580px] fixed mt-72 -ml-28 max-sm:w-96 max-sm:h-96 max-sm:absolute max-sm:m-auto"
+        />
+      </div>
 
-      <div className="h-screen flex flex-col items-center justify-center">
-        <h1 className="text-[#16231A] text-[14rem] max-sm:text-4xl">$ZORO</h1>
+      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-14">
+        <h1 className="text-[#16231A] text-[14rem] max-sm:text-8xl">$ZORO</h1>
 
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[rgb(255,10,10)] p-6 text-5xl mt-1 max-sm:text-3xl"
+          className="bg-[rgb(255,10,10)] text-white p-6 text-5xl rounded-full mt-1 max-sm:text-3xl"
         >
           Apply for Whitelist
         </Link>
       </div>
 
       {/* INFO */}
-      <div className="bg-white p-10 rounded-2xl">
-        <h1 className="text-[#16231A] text-6xl text-center max-sm:text-5xl max-sm:mt-32">
+      <div className="bg-white text-[#E40000] p-10 rounded-2xl max-sm:p-4">
+        <h1 className=" text-6xl text-center max-sm:text-5xl max-sm:mt-10">
           Info:
         </h1>
 
@@ -45,7 +47,7 @@ export function Home() {
 
       {/* WL Eligibility */}
       <div>
-        <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-32">
+        <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-12 ">
           WL Eligibility:
         </h1>
 
@@ -67,8 +69,8 @@ export function Home() {
       </div>
 
       {/* Tokenomics */}
-      <div className="bg-white p-10 rounded-2xl mt-20 mb-20">
-        <h1 className="text-[#16231A] font-bold text-6xl text-center max-sm:text-5xl">
+      <div className="bg-white text-[#E40000] p-10 rounded-2xl mt-20 mb-20 max-sm:mt-10">
+        <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
           Tokenomics:
         </h1>
 

@@ -1,27 +1,97 @@
+import { faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import zoroGif from '../assets/zoroGif.gif';
 
 export function Home() {
   return (
     <>
-      <div className="flex flex-col items-center">
-        <img
-          src={zoroGif}
-          alt=""
-          className="h-[580px] w-[580px] max-sm:w-72 max-sm:h-72"
-        />
+      <img
+        src={zoroGif}
+        alt=""
+        className="h-[580px] w-[580px] fixed mt-72 -ml-28 max-sm:w-72 max-sm:h-72"
+      />
 
-        <h1 className="text-[#16231A] text-6xl mt-16 max-sm:text-4xl">
-          $ZORO SRC-20
-        </h1>
+      <div className="h-screen flex flex-col items-center justify-center">
+        <h1 className="text-[#16231A] text-[14rem] max-sm:text-4xl">$ZORO</h1>
 
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[rgb(255,10,10)] p-6 text-5xl mt-10 max-sm:text-3xl"
+          className="bg-[rgb(255,10,10)] p-6 text-5xl mt-1 max-sm:text-3xl"
         >
           Apply for Whitelist
         </Link>
+      </div>
+
+      {/* INFO */}
+      <div className="bg-white p-10 rounded-2xl">
+        <h1 className="text-[#16231A] text-6xl text-center max-sm:text-5xl max-sm:mt-32">
+          Info:
+        </h1>
+
+        <ul className="list-disc text-center text-3xl mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:list-inside">
+          <li className="pb-14">Created by a Stamps/SRC-20 OG</li>
+          <li className="pb-14">
+            Whitelist method to ensure fairer distribution (2.5% max wallets)
+          </li>
+          <li className="pb-14">
+            Each holder of atleast 0.2% ($100) will receive utility relating to
+            sub 1K stamps!
+          </li>
+          <li>Experienced SRC-20 advisors on board</li>
+        </ul>
+      </div>
+
+      {/* WL Eligibility */}
+      <div>
+        <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-32">
+          WL Eligibility:
+        </h1>
+
+        <p className="mt-14 p-4 text-4xl text-center max-sm:text-3xl max-sm:mt-2">
+          WL available to holders of (one of these):
+        </p>
+
+        <ul className="text-center text-3xl mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:mt-2">
+          <li>$STAMP &gt; 22000</li>
+          <li>$KEVIN &gt; 116000</li>
+          <li>$STMAP &gt; 20000</li>
+          <li>$LUFFY &gt; 1000000</li>
+          <li>$PAD &gt; 150</li>
+          <li>$STUNK &gt; 500000</li>
+          <li>$ SWP &gt; 100000</li>
+
+          <li className="mt-4">At least one StamPunk</li>
+        </ul>
+      </div>
+
+      {/* Tokenomics */}
+      <div className="bg-white p-10 rounded-2xl mt-20 mb-20">
+        <h1 className="text-[#16231A] font-bold text-6xl text-center max-sm:text-5xl">
+          Tokenomics:
+        </h1>
+
+        <ul className="text-center text-3xl mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full">
+          <li>1,000,000,000 Max Supply</li>
+          <li>$0.00005 per token</li>
+          <li>$50K FDV</li>
+          <li>950,000,000 to whitelist</li>
+          <li>5% to team/advisors</li>
+        </ul>
+      </div>
+
+      <div className="absolute flex flex-col bottom-0 left-[50%] -translate-x-[50%]">
+        <div className="flex justify-center space-x-8">
+          <Link to={'https://x.com/zorosrc'} target="_blank">
+            <FontAwesomeIcon icon={faXTwitter} size="3x" />
+          </Link>
+          <Link to={'https://t.me/ZoroSRC/1'} target="_blank">
+            <FontAwesomeIcon icon={faTelegram} size="3x" />
+          </Link>
+        </div>
+
+        <p className="text-center mt-4">All rights reserved by ZOROSRC 2024</p>
       </div>
     </>
   );

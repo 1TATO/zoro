@@ -69,6 +69,7 @@ export function Home() {
     },
     bmItem: {
       display: 'block',
+      fontSize: '1.25em',
     },
     bmOverlay: {
       background: 'rgba(0, 0, 0, 0.3)',

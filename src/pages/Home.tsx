@@ -54,7 +54,7 @@ export function Home() {
     bmCross: {
       background: '#FFF',
       height: '30px',
-      top: '10px',
+      top: '14px',
       right: '10px',
     },
     bmMenuWrap: {
@@ -92,12 +92,18 @@ export function Home() {
       <section ref={homeSec} />
 
       <div className="sm:hidden">
-        <button
-          className="absolute h-5 w-5 right-5 top-5 text-white z-50"
-          onClick={toggleMenu}
-        >
-          <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} />
-        </button>
+        <div className="flex flex-row items-center justify-between">
+          <p className="text-white text-4xl font-oleo sm:hidden absolute top-5">
+            Z
+          </p>
+
+          <button
+            className="absolute h-5 w-5 right-5 top-5 text-white z-50"
+            onClick={toggleMenu}
+          >
+            <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} />
+          </button>
+        </div>
 
         <Menu
           right
@@ -116,7 +122,7 @@ export function Home() {
           <Link
             to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
             target="_blank"
-            className="bg-[#E40000] p-3 rounded-full"
+            className="bg-[#E40000] p-3 rounded-full mt-10"
           >
             Whitelist
           </Link>
@@ -150,7 +156,7 @@ export function Home() {
       </div>
 
       <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-14">
-        <h1 className="text-[#16231A] text-[14rem] max-sm:text-6xl">$ZORO</h1>
+        <h1 className="text-white text-[14rem] max-sm:text-6xl">$ZORO</h1>
 
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}

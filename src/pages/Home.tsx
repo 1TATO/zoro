@@ -102,7 +102,7 @@ export function Home() {
           </p>
 
           <button
-            className="absolute h-5 w-5 right-5 top-5 text-white z-50 pb-10 pl-10 pr-10"
+            className="absolute h-5 w-5 right-5 top-5 text-white z-50 pb-16 pl-16 pr-10"
             onClick={toggleMenu}
           >
             <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} />
@@ -178,6 +178,10 @@ export function Home() {
       {/* INFO */}
       <section ref={infoSec}>
         <div className="relative bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto mb-20 max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
+          <div className="absolute right-1 top-1">
+            <img src={zoroArt} alt="" className="h-32 max-sm:h-11" />
+          </div>
+
           <h1 className=" text-6xl text-center max-sm:text-5xl max-sm:mt-10">
             Info:
           </h1>
@@ -193,10 +197,6 @@ export function Home() {
             </li>
             <li>Experienced SRC-20 advisors on board</li>
           </ul>
-
-          <div className="absolute right-1 bottom-1">
-            <img src={zoroArt} alt="" className="h-32 max-sm:h-14" />
-          </div>
         </div>
       </section>
 
@@ -227,7 +227,11 @@ export function Home() {
 
       {/* Tokenomics */}
       <section ref={tokenomicsSec}>
-        <div className="relative bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-48 max-sm:mt-48 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
+        <div className="relative bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-48 max-sm:mt-20 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
+          <div className="absolute right-1 top-1">
+            <img src={zoroArt} alt="" className="h-32 max-sm:h-11" />
+          </div>
+
           <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
             Tokenomics:
           </h1>
@@ -239,10 +243,6 @@ export function Home() {
             <li>950,000,000 to whitelist</li>
             <li>5% to team/advisors</li>
           </ul>
-
-          <div className="absolute right-1 bottom-1">
-            <img src={zoroArt} alt="" className="h-32 max-sm:h-14" />
-          </div>
         </div>
       </section>
 

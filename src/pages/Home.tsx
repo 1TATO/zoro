@@ -50,6 +50,7 @@ export function Home() {
     bmCrossButton: {
       height: '24px',
       width: '24px',
+      padding: '35px',
     },
     bmCross: {
       background: '#FFF',

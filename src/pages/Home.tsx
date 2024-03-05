@@ -92,6 +92,7 @@ export function Home() {
     <>
       <section ref={homeSec} />
 
+      {/* BURGER MENU */}
       <div className="sm:hidden">
         <div className="flex flex-row items-center justify-between">
           <p className="text-white text-4xl font-oleo sm:hidden absolute top-5">
@@ -123,13 +124,14 @@ export function Home() {
           <Link
             to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
             target="_blank"
-            className="bg-[#E40000] p-3 rounded-full mt-10"
+            className="bg-[#E40000] p-4 rounded-full mt-10"
           >
             Whitelist
           </Link>
         </Menu>
       </div>
 
+      {/* HEADER */}
       <section className="flex flex-row items-center justify-between">
         <p className="text-white text-2xl font-oleo max-sm:hidden">Z</p>
 
@@ -148,16 +150,17 @@ export function Home() {
         </nav>
       </section>
 
+      {/* HOME */}
       <div className="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-48">
         <img
           src={zoroGif}
           alt=""
-          className="h-[580px] w-[580px] fixed mt-96 -ml-28 max-sm:w-96 max-sm:h-96 max-sm:absolute max-sm:m-auto"
+          className="h-[580px] w-[580px] fixed mt-96 -ml-28 max-sm:w-[22rem] max-sm:h-[22rem] max-sm:absolute max-sm:m-auto"
         />
       </div>
 
-      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-14">
-        <h1 className="text-white text-[14rem] max-sm:text-6xl">$ZORO</h1>
+      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-20">
+        <h1 className="text-white text-[14rem] max-sm:text-7xl max-sm:mb-7">$ZORO</h1>
 
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
@@ -170,12 +173,12 @@ export function Home() {
 
       {/* INFO */}
       <section ref={infoSec}>
-        <div className="bg-white text-[#E40000] p-10 rounded-2xl max-sm:p-4 max-sm:-mt-36">
+        <div className="bg-white text-[#E40000] p-10 rounded-2xl max-sm:px-1 max-sm:py-16 max-sm:-mt-28">
           <h1 className=" text-6xl text-center max-sm:text-5xl max-sm:mt-10">
             Info:
           </h1>
 
-          <ul className="list-disc text-center text-3xl mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:list-inside">
+          <ul className="list-disc text-center text-3xl font-inter mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:list-inside">
             <li className="pb-14">Created by a Stamps/SRC-20 OG</li>
             <li className="pb-14">
               Whitelist method to ensure fairer distribution (2.5% max wallets)
@@ -200,7 +203,7 @@ export function Home() {
             WL available to holders of (one of these):
           </p>
 
-          <ul className="text-center text-3xl mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:mt-2">
+          <ul className="text-center text-3xl font-inter mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:mt-2">
             <li>$STAMP &gt; 22000</li>
             <li>$KEVIN &gt; 116000</li>
             <li>$STMAP &gt; 20000</li>
@@ -216,12 +219,12 @@ export function Home() {
 
       {/* Tokenomics */}
       <section ref={tokenomicsSec}>
-        <div className="bg-white text-[#E40000] p-10 rounded-2xl mt-20 mb-20 max-sm:mt-48 max-sm:mb-64">
+        <div className="bg-white text-[#E40000] p-10 rounded-2xl mt-20 mb-20 max-sm:mt-48 max-sm:mb-64 max-sm:px-1 max-sm:py-16">
           <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
             Tokenomics:
           </h1>
 
-          <ul className="text-center text-3xl mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full">
+          <ul className="text-center text-3xl font-inter mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full">
             <li>1,000,000,000 Max Supply</li>
             <li>$0.00005 per token</li>
             <li>$50K FDV</li>

@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef, useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
+
+import zoroArt from '../assets/zoroArt.png';
 import zoroGif from '../assets/zoroGif.gif';
 
 export function Home() {
@@ -192,6 +194,8 @@ export function Home() {
             <li>Experienced SRC-20 advisors on board</li>
           </ul>
         </div>
+
+        <img src={zoroArt} alt="" className='m-auto mt-48' />
       </section>
 
       {/* WL Eligibility */}
@@ -221,7 +225,7 @@ export function Home() {
 
       {/* Tokenomics */}
       <section ref={tokenomicsSec}>
-        <div className="bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-20 max-sm:mt-48 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
+        <div className="bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-48 max-sm:mt-48 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
           <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
             Tokenomics:
           </h1>

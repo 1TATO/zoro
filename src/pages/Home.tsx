@@ -195,13 +195,13 @@ export function Home() {
           </ul>
         </div>
 
-        <img src={zoroArt} alt="" className='m-auto mt-48' />
+        <img src={zoroArt} alt="" className='m-auto mt-48 max-sm:h-60 max-sm:mt-40' />
       </section>
 
       {/* WL Eligibility */}
       <section ref={eligibilitySec}>
         <div>
-          <h1 className="text-[#16231A] text-6xl mt-48 text-center max-sm:text-5xl max-sm:mt-48 ">
+          <h1 className="text-[#16231A] text-6xl mt-48 text-center max-sm:text-5xl max-sm:mt-40 ">
             WL Eligibility:
           </h1>
 

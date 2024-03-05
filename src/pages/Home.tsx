@@ -177,7 +177,7 @@ export function Home() {
 
       {/* INFO */}
       <section ref={infoSec}>
-        <div className="bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
+        <div className="bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto mb-20 max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
           <h1 className=" text-6xl text-center max-sm:text-5xl max-sm:mt-10">
             Info:
           </h1>
@@ -195,13 +195,15 @@ export function Home() {
           </ul>
         </div>
 
-        <img src={zoroArt} alt="" className='m-auto mt-48 max-sm:h-60 max-sm:mt-40' />
+        <div className="bg-white rounded-2xl w-[70%] m-auto p-10 max-sm:p-10 max-sm:mt-32 max-sm:w-full">
+          <img src={zoroArt} alt="" className="m-auto max-sm:h-52" />
+        </div>
       </section>
 
       {/* WL Eligibility */}
       <section ref={eligibilitySec}>
         <div>
-          <h1 className="text-[#16231A] text-6xl mt-48 text-center max-sm:text-5xl max-sm:mt-40 ">
+          <h1 className="text-[#16231A] text-6xl mt-48 text-center max-sm:text-5xl max-sm:mt-32 ">
             WL Eligibility:
           </h1>
 

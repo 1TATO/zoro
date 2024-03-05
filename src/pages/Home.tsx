@@ -67,7 +67,7 @@ export function Home() {
     },
     bmMenu: {
       background: '#ff0a0a',
-      padding: '2.5em 1.5em 0',
+      padding: '2.5em 1em 0',
       fontSize: '1.15em',
     },
     bmMorphShape: {
@@ -75,7 +75,7 @@ export function Home() {
     },
     bmItemList: {
       color: '#FFF',
-      padding: '0.8em',
+      // padding: '0.8em',
     },
     bmItem: {
       display: 'block',
@@ -114,7 +114,7 @@ export function Home() {
           customBurgerIcon={false}
           styles={styles}
         >
-          <button className="text-white text-2xl font-oleo sm:hidden sm:absolute sm:right-5 sm:top-50 mb-10 -mt-8">
+          <button className="text-white text-2xl font-oleo sm:hidden sm:absolute sm:right-5 sm:top-50 mb-10 -mt-4">
             Z
           </button>
           <button>Home</button>
@@ -124,7 +124,7 @@ export function Home() {
           <Link
             to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
             target="_blank"
-            className="bg-[#E40000] p-4 rounded-full mt-10"
+            className="bg-[#E40000] p-4 rounded-full mt-10 text-center"
           >
             Whitelist
           </Link>
@@ -159,8 +159,10 @@ export function Home() {
         />
       </div>
 
-      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-20">
-        <h1 className="text-white text-[14rem] max-sm:text-7xl max-sm:mb-7">$ZORO</h1>
+      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-12">
+        <h1 className="text-white text-[14rem] max-sm:text-7xl max-sm:mb-5">
+          $ZORO
+        </h1>
 
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}

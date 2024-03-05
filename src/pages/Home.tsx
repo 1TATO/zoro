@@ -175,7 +175,7 @@ export function Home() {
 
       {/* INFO */}
       <section ref={infoSec}>
-        <div className="bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto max-sm:px-1 max-sm:py-16 max-sm:-mt-28">
+        <div className="bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
           <h1 className=" text-6xl text-center max-sm:text-5xl max-sm:mt-10">
             Info:
           </h1>
@@ -221,7 +221,7 @@ export function Home() {
 
       {/* Tokenomics */}
       <section ref={tokenomicsSec}>
-        <div className="bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-20 max-sm:mt-48 max-sm:mb-64 max-sm:px-1 max-sm:py-16">
+        <div className="bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-20 max-sm:mt-48 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
           <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
             Tokenomics:
           </h1>

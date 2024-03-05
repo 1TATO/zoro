@@ -178,7 +178,7 @@ export function Home() {
       {/* INFO */}
       <section ref={infoSec}>
         <div className="relative bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto mb-20 max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
-          <div className="absolute right-1 top-1">
+          <div className="absolute right-2 top-2">
             <img src={zoroArt} alt="" className="h-32 max-sm:h-14" />
           </div>
 

@@ -102,7 +102,7 @@ export function Home() {
           </p>
 
           <button
-            className="absolute h-5 w-5 right-5 top-5 text-white z-50"
+            className="absolute h-5 w-5 right-5 top-5 text-white z-50 pb-10 pl-10 pr-10"
             onClick={toggleMenu}
           >
             <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} />
@@ -161,7 +161,7 @@ export function Home() {
         />
       </div>
 
-      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-16">
+      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-[73px]">
         <h1 className="text-white text-[14rem] max-sm:text-7xl max-sm:mb-5">
           $ZORO
         </h1>

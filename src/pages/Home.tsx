@@ -157,7 +157,7 @@ export function Home() {
         <img
           src={zoroGif}
           alt=""
-          className="h-[580px] w-[580px] fixed mt-96 -ml-28 z-50 max-sm:w-[22rem] max-sm:h-[22rem] max-sm:absolute max-sm:m-auto"
+          className="h-[580px] w-[580px] fixed mt-96 -ml-28 z-40 max-sm:w-[22rem] max-sm:h-[22rem] max-sm:absolute max-sm:m-auto"
         />
       </div>
 

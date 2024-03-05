@@ -157,11 +157,11 @@ export function Home() {
         <img
           src={zoroGif}
           alt=""
-          className="h-[580px] w-[580px] fixed mt-96 -ml-28 max-sm:w-[22rem] max-sm:h-[22rem] max-sm:absolute max-sm:m-auto"
+          className="h-[580px] w-[580px] fixed mt-96 -ml-28 z-50 max-sm:w-[22rem] max-sm:h-[22rem] max-sm:absolute max-sm:m-auto"
         />
       </div>
 
-      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-12">
+      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-16">
         <h1 className="text-white text-[14rem] max-sm:text-7xl max-sm:mb-5">
           $ZORO
         </h1>
@@ -177,7 +177,7 @@ export function Home() {
 
       {/* INFO */}
       <section ref={infoSec}>
-        <div className="bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto mb-20 max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
+        <div className="relative bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto mb-20 max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
           <h1 className=" text-6xl text-center max-sm:text-5xl max-sm:mt-10">
             Info:
           </h1>
@@ -193,10 +193,10 @@ export function Home() {
             </li>
             <li>Experienced SRC-20 advisors on board</li>
           </ul>
-        </div>
 
-        <div className="bg-[#ff0a0a] rounded-2xl w-[70%] m-auto mt-32 p-10 max-sm:p-10 max-sm:mt-20 max-sm:w-full">
-          <img src={zoroArt} alt="" className="m-auto max-sm:h-44" />
+          <div className="absolute right-1 bottom-1">
+            <img src={zoroArt} alt="" className="h-32 max-sm:h-14" />
+          </div>
         </div>
       </section>
 
@@ -227,7 +227,7 @@ export function Home() {
 
       {/* Tokenomics */}
       <section ref={tokenomicsSec}>
-        <div className="bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-48 max-sm:mt-48 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
+        <div className="relative bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-48 max-sm:mt-48 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
           <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
             Tokenomics:
           </h1>
@@ -239,6 +239,10 @@ export function Home() {
             <li>950,000,000 to whitelist</li>
             <li>5% to team/advisors</li>
           </ul>
+
+          <div className="absolute right-1 bottom-1">
+            <img src={zoroArt} alt="" className="h-32 max-sm:h-14" />
+          </div>
         </div>
       </section>
 

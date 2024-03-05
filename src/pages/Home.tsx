@@ -14,11 +14,6 @@ export function Home() {
   const eligibilitySec = useRef<null | HTMLElement>(null);
   const tokenomicsSec = useRef<null | HTMLElement>(null);
 
-  // const homeClick = () => {
-  //   homeSec.current?.scrollIntoView({ behavior: 'smooth' });
-  //   setMenuOpenState(false);
-  // };
-
   const infoClick = () => {
     infoSec.current?.scrollIntoView({ behavior: 'smooth' });
     setMenuOpenState(false);
@@ -44,8 +39,7 @@ export function Home() {
       width: '24px',
       height: '20px',
       right: '20px',
-      top: '40px',
-      // display: 'hidden',
+      top: '1px',
     },
     bmBurgerBars: {
       background: '#FFFFFF',
@@ -59,6 +53,9 @@ export function Home() {
     },
     bmCross: {
       background: '#FFF',
+      height: '30px',
+      top: '10px',
+      right: '10px',
     },
     bmMenuWrap: {
       position: 'fixed',
@@ -96,7 +93,7 @@ export function Home() {
 
       <div className="sm:hidden">
         <button
-          className="absolute h-5 w-5 right-5 top-10 text-white z-50"
+          className="absolute h-5 w-5 right-5 top-5 text-white z-50"
           onClick={toggleMenu}
         >
           <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} />
@@ -109,6 +106,9 @@ export function Home() {
           customBurgerIcon={false}
           styles={styles}
         >
+          <button className="text-white text-2xl font-oleo sm:hidden sm:absolute sm:right-5 sm:top-50 mb-10 -mt-8">
+            Z
+          </button>
           <button>Home</button>
           <button onClick={infoClick}>Info</button>
           <button onClick={eligibilityClick}>Eligibility</button>
@@ -123,19 +123,23 @@ export function Home() {
         </Menu>
       </div>
 
-      <nav className="flex items-center justify-end gap-10 text-white text-xl gap-y-5 max-sm:text-xs max-sm:hidden">
-        <button>Home</button>
-        <button onClick={infoClick}>Info</button>
-        <button onClick={eligibilityClick}>Eligibility</button>
-        <button onClick={tokenomicsClick}>Tokenomics</button>
-        <Link
-          to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
-          target="_blank"
-          className="bg-[#E40000] p-2 rounded-full max-sm:hidden"
-        >
-          Whitelist
-        </Link>
-      </nav>
+      <section className="flex flex-row items-center justify-between">
+        <p className="text-white text-2xl font-oleo max-sm:hidden">Z</p>
+
+        <nav className="flex items-center justify-end gap-10 text-white text-xl gap-y-5 max-sm:text-xs max-sm:hidden">
+          <button>Home</button>
+          <button onClick={infoClick}>Info</button>
+          <button onClick={eligibilityClick}>Eligibility</button>
+          <button onClick={tokenomicsClick}>Tokenomics</button>
+          <Link
+            to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
+            target="_blank"
+            className="bg-[#E40000] p-2 rounded-full max-sm:hidden"
+          >
+            Whitelist
+          </Link>
+        </nav>
+      </section>
 
       <div className="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-48">
         <img
@@ -181,7 +185,7 @@ export function Home() {
       {/* WL Eligibility */}
       <section ref={eligibilitySec}>
         <div>
-          <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-12 ">
+          <h1 className="text-[#16231A] text-6xl mt-20 text-center max-sm:text-5xl max-sm:mt-48 ">
             WL Eligibility:
           </h1>
 
@@ -205,7 +209,7 @@ export function Home() {
 
       {/* Tokenomics */}
       <section ref={tokenomicsSec}>
-        <div className="bg-white text-[#E40000] p-10 rounded-2xl mt-20 mb-20 max-sm:mt-10 max-sm:mb-48">
+        <div className="bg-white text-[#E40000] p-10 rounded-2xl mt-20 mb-20 max-sm:mt-48 max-sm:mb-64">
           <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
             Tokenomics:
           </h1>

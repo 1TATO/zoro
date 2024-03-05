@@ -169,7 +169,7 @@ export function Home() {
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[rgb(255,10,10)] text-white p-6 text-5xl rounded-full mt-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 max-sm:text-2xl"
+          className="bg-[#ff0a0a] text-white p-6 text-5xl rounded-full mt-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 max-sm:text-2xl"
         >
           Apply for Whitelist
         </Link>
@@ -195,15 +195,15 @@ export function Home() {
           </ul>
         </div>
 
-        <div className="bg-white rounded-2xl w-[70%] m-auto p-10 max-sm:p-10 max-sm:mt-32 max-sm:w-full">
-          <img src={zoroArt} alt="" className="m-auto max-sm:h-52" />
+        <div className="bg-[#ff0a0a] rounded-2xl w-[70%] m-auto mt-32 p-10 max-sm:p-10 max-sm:mt-20 max-sm:w-full">
+          <img src={zoroArt} alt="" className="m-auto max-sm:h-44" />
         </div>
       </section>
 
       {/* WL Eligibility */}
       <section ref={eligibilitySec}>
         <div>
-          <h1 className="text-[#16231A] text-6xl mt-48 text-center max-sm:text-5xl max-sm:mt-32 ">
+          <h1 className="text-[#16231A] text-6xl mt-32 text-center max-sm:text-5xl max-sm:mt-20">
             WL Eligibility:
           </h1>
 

@@ -168,7 +168,7 @@ export function Home() {
           className="sm:hidden max-sm:w-[22rem] max-sm:h-[22rem]"
         />
 
-        <h1 className="text-white text-[14rem] mt-52 max-sm:text-7xl max-sm:mb-5 max-sm:mt-0">
+        <h1 className="text-white text-[14rem] mt-52 max-sm:text-7xl max-sm:mb-5 max-sm:mt-6">
           $ZORO
         </h1>
 

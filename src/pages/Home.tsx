@@ -153,7 +153,7 @@ export function Home() {
       </section>
 
       {/* HOME */}
-      <div className="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-48">
+      <div className="max-sm:hidden max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:mt-48">
         <img
           src={zoroGif}
           alt=""
@@ -161,15 +161,21 @@ export function Home() {
         />
       </div>
 
-      <div className="h-screen flex flex-col items-center justify-center max-sm:-mt-[73px]">
-        <h1 className="text-white text-[14rem] max-sm:text-7xl max-sm:mb-5">
+      <div className="h-[70%] flex flex-col items-center justify-between">
+        <img
+          src={zoroGif}
+          alt=""
+          className="sm:hidden max-sm:w-[22rem] max-sm:h-[22rem]"
+        />
+
+        <h1 className="text-white text-[14rem] mt-52 max-sm:text-7xl max-sm:mb-5 max-sm:mt-0">
           $ZORO
         </h1>
 
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[#ff0a0a] text-white p-6 text-5xl rounded-full mt-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 max-sm:text-2xl"
+          className="bg-[#ff0a0a] text-white p-6 text-5xl rounded-full mt-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 max-sm:text-2xl max-sm:z-50"
         >
           Apply for Whitelist
         </Link>
@@ -177,7 +183,7 @@ export function Home() {
 
       {/* INFO */}
       <section ref={infoSec}>
-        <div className="relative bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto mb-20 max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:-mt-28">
+        <div className="relative bg-white text-[#E40000] p-20 rounded-2xl w-[70%] m-auto mb-20 mt-56 max-sm:px-1 max-sm:py-16 max-sm:w-full max-sm:mt-28">
           <div className="absolute right-2 top-2">
             <img src={zoroArt} alt="" className="h-32 max-sm:h-14" />
           </div>
@@ -203,7 +209,7 @@ export function Home() {
       {/* WL Eligibility */}
       <section ref={eligibilitySec}>
         <div>
-          <h1 className="text-[#16231A] text-6xl mt-32 text-center max-sm:text-5xl max-sm:mt-20">
+          <h1 className="text-6xl mt-32 text-center max-sm:text-5xl max-sm:mt-20">
             WL Eligibility:
           </h1>
 
@@ -211,7 +217,7 @@ export function Home() {
             WL available to holders of (one of these):
           </p>
 
-          <ul className="text-center text-3xl font-inter mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:mt-2">
+          <ul className="text-[#142319] text-center text-3xl font-inter mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:mt-2">
             <li>$STAMP &gt; 22000</li>
             <li>$KEVIN &gt; 116000</li>
             <li>$STMAP &gt; 20000</li>
@@ -227,7 +233,7 @@ export function Home() {
 
       {/* Tokenomics */}
       <section ref={tokenomicsSec}>
-        <div className="relative bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-48 mb-48 max-sm:mt-20 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
+        <div className="relative bg-white text-[#E40000] p-20 w-[70%] m-auto rounded-2xl mt-32 mb-48 max-sm:mt-20 max-sm:w-full max-sm:mb-64 max-sm:px-1 max-sm:py-16">
           <h1 className="font-bold text-6xl text-center max-sm:text-5xl">
             Tokenomics:
           </h1>

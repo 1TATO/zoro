@@ -126,7 +126,7 @@ export function Home() {
           <Link
             to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
             target="_blank"
-            className="bg-[#E40000] p-4 rounded-full mt-10 text-center"
+            className="bg-[#E3E700] text-black p-4 rounded-full mt-10 text-center"
           >
             Whitelist
           </Link>
@@ -145,7 +145,7 @@ export function Home() {
           <Link
             to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
             target="_blank"
-            className="bg-[#E40000] p-2 rounded-full max-sm:hidden"
+            className="bg-[#E3E700] text-black p-4 rounded-full text-center max-sm:hidden"
           >
             Whitelist
           </Link>
@@ -175,7 +175,7 @@ export function Home() {
         <Link
           to={'https://forms.gle/P6bE8GeDA9ooqQUR9'}
           target="_blank"
-          className="bg-[#ff0a0a] text-white p-6 text-5xl rounded-full mt-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 max-sm:text-2xl max-sm:z-50"
+          className="bg-[#E3E700] p-6 text-5xl rounded-full mt-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 max-sm:text-2xl max-sm:z-50"
         >
           Apply for Whitelist
         </Link>
@@ -217,7 +217,7 @@ export function Home() {
             WL available to holders of (one of these):
           </p>
 
-          <ul className="text-[#142319] text-center text-3xl font-inter mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:mt-2">
+          <ul className="text-center text-3xl font-inter mt-10 w-[480px] m-auto max-sm:text-xl max-sm:w-full max-sm:mt-2">
             <li>$STAMP &gt; 22000</li>
             <li>$KEVIN &gt; 116000</li>
             <li>$STMAP &gt; 20000</li>
